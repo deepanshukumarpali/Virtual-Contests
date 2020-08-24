@@ -1,62 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
 <style>
-  html {
-height: 100%;
-}
+
 body {
-margin:0;
-padding:0;
-font-family: sans-serif;
-background: linear-gradient(#141e30, #243b55);
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background:  #273b5ce8;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: auto;
+
 }
+
 footer {
-  color:rgba(255, 255, 255, 0.671);
-  margin-top: 52%;
-  margin-left: 40%;
-  width: 100%;
-  text-align:center;
-  font-size: 15px;
+    color:rgba(255, 255, 255, 0.911);
+    width: 100%;
+    text-align:center;
+    font-size: 30px;
+    position: absolute;
+    height: 2.5rem;  
+    margin-top: 50px;
 }
 a {
-  font-weight: 500;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.774);
-  text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.774);
+    text-decoration: none;
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.876);
+    font-weight: bolder;
+    text-shadow: dimgrey;
+    box-shadow: dimgrey;
+
 }
 
-.heading {
-  top: 10%;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  color:rgba(255, 255, 255, 0.781);
-
-}
 .login-box {
-  align-self: center;
-position: absolute;
-top: 50%;
-left: 50%;
-width: 400px;
-padding: 40px;
-transform: translate(-50%, -50%);
-background: rgba(0,0,0,.5);
-box-sizing: border-box;
-box-shadow: 0 15px 25px rgba(0,0,0,.6);
-border-radius: 10px;
+    text-align: center ;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-bottom: 100px;
+    width: 39%;
+    padding: 50px;
+    height: auto;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
 }
 
-.login-box h2 {
-margin: 0 0 30px;
-padding: 0;
-color: #fff;
-text-align: center;
-}
-
-.login-box .user-box {
-position: relative;
-}
 
 .login-box .user-box input {
 width: 100%;
@@ -69,76 +70,58 @@ border-bottom: 1px solid rgb(255, 255, 255);
 outline: none;
 background-color: rgba(0,0,0,0);
 }
-.login-box .user-box label {
-position: absolute;
-top:0;
-left: 0;
-padding: 10px 0;
-font-size: 16px;
-color: #fff;
-pointer-events: none;
-transition: .5s;
-}
+
 
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
 top: -20px;
-left: 0;
+left: 5;
 color: #03e9f4;
 font-size: 12px;
 }
-
 input[type=submit]{
-  background-color: rgba(0,0.5,1,0);
-  border: 1px solid rgba(255, 255, 255, 0.89);
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color:rgba(255, 255, 255, 0.76);
-  font-size: 16px;
-  font-weight: 200;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 1px;
+    background-color: rgba(0,0.5,1,0);
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 1px;
 
 }
-
-
 
 
 </style>
 
 
 
+</head>
 <body>
-<div class="heading">
-  <h1>
-      GET CONTESTS FOR VIRTUAL PARTICIPATION
-  </h1>
-</div>
-<div class="login-box">
-  <br><br>
-  <form action="virtual">
-    <div class="user-box">
-      <input type="text" name="user" required="" placeholder="Codeforces Handle"">
+    <h1>GET CONTESTS FOR VIRTUAL PARTICIPATION</h1>
+    <div class="login-box">
+        <form action="virtual">
+          <div class="user-box">
+            <input type="text" name="user" required="" placeholder="Codeforces Handle"">
+          </div>
+          <div class="user-box">
+            <input type="number" name="div" required="" placeholder="Division"min=1 max=4>
+          </div>
+        <input type="submit" value="Get Virtual Contests"> 
+          
+        </form>
+      
     </div>
-    <div class="user-box">
-      <input type="number" name="div" required="" placeholder="Division"min=1 max=4>
-    </div>
-  <input type="submit" value="Get Virtual Contests"> 
-    
-  </form>
-
-</div>
+    <footer>
+        <span style="font-size: 10px; font-family:'Times New Roman', Times, serif;">by </span>
+        <a class="foot" href="https://www.linkedin.com/in/deepanshu-kumar-pali-bba268178/"  style="font-size: 18px;">*Deepanshu Kumar Pali </a>
+    </footer>
 </body>
-<footer>
-  <span style="font-size: 10px; font-family:'Times New Roman', Times, serif;">by </span>
-  <a class="foot" href="https://www.linkedin.com/in/deepanshu-kumar-pali-bba268178/" >*Deepanshu Kumar Pali </a>
-</footer>
-
-
 
 </html>
