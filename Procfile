@@ -1,0 +1,1 @@
+web: gunicorn VirtualContests.wsgi --log-file

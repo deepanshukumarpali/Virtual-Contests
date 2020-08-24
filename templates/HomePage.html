@@ -1,0 +1,126 @@
+<style>
+    html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.heading {
+    top: 10%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.507);
+
+}
+.login-box {
+    align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: none;
+  background-color: rgba(0,0,0,0);
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+input[type=submit]{
+    background-color: rgba(0,0.5,1,0);
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 1px;
+  
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<div class="heading">
+    <h1>
+        GET CONTESTS FOR VIRTUAL PARTICIPATION
+    </h1>
+</div>
+<div class="login-box">
+    <br><br>
+    <form action="virtual">
+      <div class="user-box">
+        <input type="text" name="user" required="" placeholder="Codeforces Handle"">
+      </div>
+      <div class="user-box">
+        <input type="text" name="div" required="" placeholder="Division">
+      </div>
+    <input type="submit" value="Get Virtual Contests"> 
+      
+    </form>
+  </div>
+
+
+
+
+
