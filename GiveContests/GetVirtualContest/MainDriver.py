@@ -5,7 +5,7 @@ def letsGo(user,div):
 
     ok=try_virtual.TryTheseContests(user,div)
 
-    if(ok): print("Success!!")
+    if(ok[0]): print("Success!!")
     else: print("Error!!!")
 
     return ok

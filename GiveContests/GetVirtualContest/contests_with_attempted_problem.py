@@ -7,7 +7,7 @@ def GetSolvedProblems(user):
     r=requests.get(url)
 
     content=r.json()
-    if(content['status']!='OK'): return False
+    if(content['status']!='OK'): return (False,1)
 
     content=content['result']
     problems=set()
@@ -15,4 +15,5 @@ def GetSolvedProblems(user):
     for problem in content:
         problems.add(problem['contestId'])
 
-    return problems
+
+    return (True,problems)

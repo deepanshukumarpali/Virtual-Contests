@@ -1,3 +1,5 @@
+<html>
+
 <style>
 
 body {
@@ -20,27 +22,9 @@ body {
     font-size: 11rem;
     position:absolute;
     top: 8%;
-    left: 20%;
+    left: 7%;
   }
 
-.far {
-  position: absolute;
-  font-size: 8.5rem;
-  left: 42%;
-  top: 15%;
-  color: #ffffff;
-
-}
-
- .err2 {
-    color: #ffffff;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 11rem;
-    position:absolute;
-    left: 68%;
-    top: 10%;
-    align-self: center;
-  }
 
 .msg {
     color: #fff;
@@ -48,7 +32,7 @@ body {
     font-size: 1.6rem;
     position:absolute;
     left: 10%;
-    top: 50%;
+    top: 55%;
     right: 10%;
     /* width: 75%; */
   }
@@ -71,7 +55,11 @@ a:hover {
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <div class="mainbox">
-      <div class="err">404</div>
-      <div class="msg">Maybe Handle [{{user}}] does not exist ! or No Contests are available for [{{user}}] in division {{div}} ! or codeforces site issue !
-        </div>
+      <div class="err">Oops !</div>
+      <div class="msg">{{text}}</div>
+      
+    </body>
+
+</html>

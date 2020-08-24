@@ -21,12 +21,12 @@ table{
   background: rgba(0,0,0,.5);
 }
 .tbl-content{
-  height:450px;
+  height:60%;
   overflow-x:auto;
   margin-top: 0px;
 }
 th{
-  padding: 20px 15px;
+  padding: 15px;
   text-align: left;
   font-weight: 500;
   font-size: 18px;
@@ -42,6 +42,12 @@ td{
   color: #fff;
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
+a{
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
 
 
 
@@ -55,18 +61,6 @@ section{
 }
 
 
-
-/* for custom scrollbar for webkit browser*/
-
-::-webkit-scrollbar {
-    width: 6px;
-} 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-} 
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
 </style>
 
 
@@ -81,7 +75,7 @@ section{
         <thead>
           <tr>
             <th width=200>Contest ID</th>
-            <th>Contest Name</th>
+            <th>Contest Link</th>
           </tr>
         </thead>
       </table>
@@ -89,10 +83,10 @@ section{
     <div class="tbl-content">
       <table cellpadding="0" cellspacing="0" border="0">
         <tbody>
-        {% for x,y in list %}
+        {% for x,y,z in list %}
           <tr>
-            <td width=200>{{x}}</td>
-            <td>{{y}}</td>
+            <td width=200> {{x}}</td>
+            <td><a href={{z}}>*{{y}} </a></td>
           </tr>
         {% endfor %}
           

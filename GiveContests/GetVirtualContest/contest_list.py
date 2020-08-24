@@ -6,7 +6,7 @@ def GetContestIDs(div):
     r=requests.get(url)
 
     content=r.json()
-    if(content['status']!='OK'): return False
+    if(content['status']!='OK'): return (False,3)
     
     content=content['result']
     Contest={}
@@ -18,7 +18,7 @@ def GetContestIDs(div):
     # print(Contest)
     # print(div)
     
-    return Contest
+    return (True,Contest)
 
 
 
