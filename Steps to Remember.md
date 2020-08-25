@@ -78,4 +78,4 @@
 
     * update changes to heroku repository
 
-        $ git push origin master 
+        $ git push heroku master 
