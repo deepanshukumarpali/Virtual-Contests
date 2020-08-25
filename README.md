@@ -1,5 +1,14 @@
 ## Virtual Contests for Codeforces
 
+# Link: https://guarded-chamber-89041.herokuapp.com/
+
+- How to Use
+
+    * go to above mentioned link
+    * enter your codeforces userhandle
+    * enter the division which you want
+    * hit GET VIRTUAL CONTEST to list all available contest
+
 
 - What it does:
 
