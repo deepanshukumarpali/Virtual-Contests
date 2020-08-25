@@ -3,7 +3,7 @@
 #### Link: https://guarded-chamber-89041.herokuapp.com/
 
 
-- How to Use
+- How to Use:
 
     * go to above mentioned link
     * enter your codeforces userhandle
